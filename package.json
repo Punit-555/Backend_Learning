@@ -1,0 +1,29 @@
+{
+  "name": "backend_learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Punit-555/Backend_Learning.git"
+  },
+  "author": "Punit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Punit-555/Backend_Learning/issues"
+  },
+  "homepage": "https://github.com/Punit-555/Backend_Learning#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9",
+    "pg": "^8.14.1"
+  }
+}
