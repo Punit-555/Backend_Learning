@@ -1,0 +1,141 @@
+// ======================
+// COLOR VARIABLES
+// ======================
+
+// Primary Colors
+$primary-color: #3498db;
+$primary-dark: #2980b9;
+$primary-light: #5dade2;
+
+
+
+// Secondary Colors
+$secondary-color: #2ecc71;
+$secondary-dark: #27ae60;
+$secondary-light: #58d68d;
+
+// ======================
+// LAYOUT VARIABLES
+// ======================
+$header-height: 80px; // Add this
+$max-width: 1440px; // You're using this in header__container
+
+// Add these if not already present
+$color-primary: #4361ee;
+$color-secondary: #3a0ca3;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-text: #2b2d42;
+
+// Neutral Colors
+$white: #ffffff;
+$black: #000000;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Semantic Colors
+$success-color: #28a745;
+$error-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+
+// Theme Colors
+$background-color: $white;
+$text-color: $gray-900;
+$text-color-light: $gray-600;
+$border-color: $gray-300;
+
+// ======================
+// FONT VARIABLES
+// ======================
+
+// Font Families (from Google Fonts in your HTML)
+$font-primary: "Roboto Condensed", sans-serif;
+$font-secondary: "Poetsen One", cursive;
+$font-monospace: "Courier New", monospace;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Font Sizes
+$font-size-base: 1rem; // 16px by default
+$font-size-xs: 0.75rem;  // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-md: 1rem;     // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem;  // 20px
+$font-size-xxl: 1.5rem;  // 24px
+$font-size-xxxl: 2rem;   // 32px
+
+// Line Heights
+$line-height-tight: 1.2;
+$line-height-normal: 1.5;
+$line-height-loose: 1.8;
+
+// ======================
+// SPACING VARIABLES
+// ======================
+
+$spacing-unit: 1rem; // 16px by default
+
+$spacing-xxs: 0.25rem; // 4px
+$spacing-xs: 0.5rem;   // 8px
+$spacing-sm: 0.75rem;  // 12px
+$spacing-md: 1rem;     // 16px
+$spacing-lg: 1.5rem;   // 24px
+$spacing-xl: 2rem;     // 32px
+$spacing-xxl: 3rem;    // 48px
+
+// ======================
+// BORDER VARIABLES
+// ======================
+
+$border-radius-sm: 0.25rem; // 4px
+$border-radius-md: 0.5rem;  // 8px
+$border-radius-lg: 1rem;    // 16px
+$border-radius-full: 50%;
+
+$border-width-thin: 1px;
+$border-width-thick: 2px;
+
+// ======================
+// SHADOW VARIABLES
+// ======================
+
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+// ======================
+// Z-INDEX VARIABLES
+// ======================
+
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+
+// ======================
+// BREAKPOINTS
+// ======================
+
+$breakpoint-xs: 0;       // Extra small devices (portrait phones)
+$breakpoint-sm: 576px;   // Small devices (landscape phones)
+$breakpoint-md: 768px;   // Medium devices (tablets)
+$breakpoint-lg: 992px;   // Large devices (desktops)
+$breakpoint-xl: 1200px;  // Extra large devices (large desktops)

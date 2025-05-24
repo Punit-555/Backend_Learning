@@ -1,0 +1,24 @@
+// Animation utility classes
+
+
+.slide-in-top {
+  @include slide-in-top;
+}
+
+.slide-in-left {
+  @include slide-in-left;
+}
+
+.slide-in-right {
+  @include slide-in-right;
+}
+
+.fade-in {
+  @include fade-in;
+}
+
+// Delay utilities
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+// ...add more as needed

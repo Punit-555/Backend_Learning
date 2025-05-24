@@ -1,0 +1,71 @@
+@import '../../App.scss'; // Adjust this path based on your project structure
+
+.header {
+  height: $header-height;
+  background-color: $primary-color;
+  color: $white;
+  box-shadow: $shadow-md;
+//   position: sticky;
+  top: 0;
+//   z-index: $z-index-sticky;
+
+  &__container {
+    // max-width: $max-width;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-family: $font-secondary;
+    font-size: $font-size-xxl;
+    font-weight: $font-weight-bold;
+    color: $white;
+  }
+
+  &__nav {
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: $spacing-lg;
+
+      li a {
+        text-decoration: none;
+        color: $white;
+        font-size: $font-size-md;
+        font-weight: $font-weight-medium;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $secondary-light;
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+
+    span {
+      height: 3px;
+      width: 25px;
+      background: $white;
+      margin-bottom: 5px;
+      border-radius: $border-radius-sm;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      display: flex;
+    }
+  }
+}

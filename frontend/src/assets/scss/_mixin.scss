@@ -1,0 +1,93 @@
+@import './variables';
+
+// Slide-in Animations
+@mixin slide-in-top($duration: 0.5s, $delay: 0s, $easing: ease-out) {
+  animation: slideInTop $duration $delay $easing both;
+  
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin slide-in-left($duration: 0.5s, $delay: 0s, $easing: ease-out) {
+  animation: slideInLeft $duration $delay $easing both;
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin slide-in-right($duration: 0.5s, $delay: 0s, $easing: ease-out) {
+  animation: slideInRight $duration $delay $easing both;
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+// Fade Animations
+@mixin fade-in($duration: 0.5s, $delay: 0s) {
+  animation: fadeIn $duration $delay both;
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+@mixin breakpoint-md-down {
+  @media (max-width: #{$breakpoint-md - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-md-up {
+  @media (min-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+
+@mixin transition($properties) {
+  transition: $properties;
+}
+
+@mixin text-gradient($from, $to) {
+  background: linear-gradient(90deg, $from, $to);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin box-shadow($level) {
+  @if $level == 1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  } @else if $level == 2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  } @else if $level == 3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+}
+// Usage Example:
+// .element {
+//   @include slide-in-top(0.8s, 0.2s);
+// }
